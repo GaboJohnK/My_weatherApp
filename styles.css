@@ -1,0 +1,37 @@
+.wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+h1 {
+    font-size: 25px;
+    line-height: 28px;
+}
+#cityInput {
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 300px;
+    border: 1px solid;
+    padding-left: 40px;
+}
+#searchButton {
+    font-size: 18px;
+    position: relative;
+    left: 80px;
+    background-color: blueviolet;
+}
+#searchButton :hover {
+        cursor: pointer;
+    }
+    
+h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+ul {
+    list-style: none;
+}

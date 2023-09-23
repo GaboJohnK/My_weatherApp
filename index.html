@@ -11,7 +11,7 @@
 crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bebas+Neue&family=Tilt+Prism&display=swap"
  rel="stylesheet">
-
+  <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherApp</title>
@@ -19,11 +19,19 @@ crossorigin>
 <body>
     <div class="container">
         <div class="wrapper">
+          <form id = "citySearchForm">
+			<div class="search">
+			<input type="text" id = "cityInput" 
+            placeholder="Enter city name"/>
+			<button type="button" id = "searchButton" 
+            class="btn btn-primary">Search</button>	
+		</div>
+		</form>  
      <h1>
         Gaborone
      </h1>
      <ul>
-        <li>
+        <li id="currentTime">
             Friday 11:36
         </li>
         <li>Rainy</li>
@@ -39,19 +47,20 @@ crossorigin>
             <li>
                 Precipitation: 0%
             </li>
-            <li>Humility: 34%</li>
+            <li>Humidity: 34%</li>
             <li>Wind: 2km/h</li>
          </ul>
         </div>
      </div>
     </div>
-    </div>
+    
     <small>
     <a href="https://github.com/GaboJohnK/My_weatherApp"
     target="blank">
         
         Code</a> by Gabo John K
     </small>
+    </div>
     <script src=""></script>
 </body>
 </html>
