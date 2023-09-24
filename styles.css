@@ -37,5 +37,20 @@ ul {
 }
 #link {
     position: relative;
+    bottom: 20px;
+}
+#iconItem {
+    position: relative;
     bottom: 30px;
+}
+#units {
+    position: relative;
+    top: -34px;
+    font-size: 20px;
+}
+#temperature {
+    position: relative;
+    left: 0px;
+    font-size: 55px;
+    line-height: 1;
 }
