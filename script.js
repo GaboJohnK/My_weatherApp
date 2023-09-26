@@ -100,31 +100,11 @@ cityInput.addEventListener("keydown", function (event) {
 
 function displayTemp(event) {
   event.preventDefault();
-  celsiusLink.classList.add("now");
-  fahrLink.classList.remove("now");
   let temperatureItem= document.querySelector("#temperature");
   temperatureItem.innerHTML = Math.round(celsiusTemp);
 }
 
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let temperatureItem = document.querySelector("#temperature");
-
-  celsiusLink.classList.remove("now");
-  fahrLink.classList.add("now");
-  let fahrenTemp =(celsiusTemp * 9) / 5 + 32;
-  temperatureItem.innerHTML = Math.round(fahrenTemp);
-}
-
-let celsiusTemp = null;
-
 let citySearch = document.querySelector("#citySearchForm");
 citySearch.addEventListener("click", cityData);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", displayTemp);
-
-let fahrLink = document.querySelector("#fahrenheit");
-fahrLink.addEventListener("click", displayFahrenheit);
 
 weatherData("Gaborone");
