@@ -1,9 +1,11 @@
+
 .wrapper {
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
     border: 1px solid;
     border-radius: 8px;
+    background-color: rgb(237, 247, 243);
 }
 h1 {
     font-size: 25px;
@@ -24,6 +26,7 @@ h1 {
     font-size: 18px;
     position: relative;
     left: 80px;
+    background-color: rgb(31, 158, 175);
     
 }
 #searchButton :hover {
