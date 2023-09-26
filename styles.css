@@ -37,11 +37,12 @@ ul {
     position: relative;
     top: -30px;
     text-decoration: none;
-    left: 300px;
+    left: 260px;
 }
 #iconItem {
     position: relative;
-    top: -40px;
+    top: -20px;
+    right: 10px;
 }
 #units {
     position: relative;
@@ -55,4 +56,11 @@ ul {
     font-size: 55px;
     line-height: 1;
     color: rgb(121, 118, 118);
+}
+
+#forecast {
+    margin-top: 35px;
+}
+.temperature-min {
+    color: rgb(153, 142, 142);
 }

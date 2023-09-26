@@ -37,7 +37,7 @@ crossorigin>
      <div class="row">
         <div class="col-6">
             <div class="d-flex weather-temperature">
-           <img src="" alt="Clear" id="iconItem" />
+           <img src="" alt="Clear" id="iconItem" width="62" />
         <div>
         <strong id="temperature"></strong
          ><span id="units"> 
@@ -50,18 +50,32 @@ crossorigin>
          <ul>
 			<li>Humidity: <span id="humidity"></span></li>
 			<li>Wind: <span id="wind"></span></li>
-			</ul>
+         </u>
+    </div>
+     </div>
+     <div id="forecast">
+     <div class="row">
+     <div class="col-2">
+        <div class="forecastDays"></div>
+        <img
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png";
+            alt=""
+            width="42"
+                />
+            <div id="forecastTemperatures">
+            <span class="temperature-min"></span>
+        <span class="temperature-max"></span>
         </div>
      </div>
-    </div>
-    
+     </div>
+     </div>
+        </div>
     <small id="link">
     <a href="https://github.com/GaboJohnK/My_weatherApp"
     target="blank">
         
-        Coded</a> by Gabo John K
+        Source code</a> by Gabo John K
     </small>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
