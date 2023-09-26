@@ -48,6 +48,14 @@ function cityData(event) {
   let city = document.querySelector("#cityInput").value;
   weatherData(city);
 }
+let cityInput = document.querySelector("#cityInput");
+cityInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    cityData(event);
+  }
+});
+
 function displayTemp(event) {
   event.preventDefault();
   celsiusLink.classList.add("now");
