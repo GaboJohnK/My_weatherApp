@@ -17,20 +17,20 @@ function showForecast(response) {
 
 let forecastItems = `<div class="row">`;
 
-for (let i = 1; i <= 6; i++) {
+for (let i = 2; i <= 7; i++) {
     let dayData = response.data.daily[i - 1];
 
   let day = new Date(dayData.time * 1000).toLocaleDateString("en-US", { weekday: "short" });
     let maxTemp = Math.round(dayData.temperature.maximum) + "°";
     let minTemp = Math.round(dayData.temperature.minimum) + "°";
-
+  let iconUrl = `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${dayData.condition.icon}.png`;
   forecastItems = 
   forecastItems +
 
   `<div class="col-2">
         <div class="forecastDays">${day}</div>
         <img
-        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png";
+        src= "${iconUrl}";
             alt=""
             width="42"
                 />
